@@ -1,0 +1,10 @@
+version: "3"
+services:
+    qhdata:
+      image: alpine
+      volumes:
+        - ./qhdata:/BTJData/qhdata
+        - ./config/config.yml:/BTJData/config/config.yml
+      command: chmod 755 /BTJData/qhdata && /BTJData/qhdata
+      network_mode: host
+      container_name: qhdata
