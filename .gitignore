@@ -2,3 +2,4 @@ build/
 qhDataInputDb.go
 .git
 .idea
+*.temp
